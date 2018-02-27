@@ -1,0 +1,224 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: 'talentsoft-font-icons';
+    src: url('fonts/talentsoft-font-icons.eot?60qsgy');
+    src: url('fonts/talentsoft-font-icons.eot?60qsgy#iefix') format('embedded-opentype'),
+    url('fonts/talentsoft-font-icons.ttf?60qsgy') format('truetype'),
+    url('fonts/talentsoft-font-icons.woff?60qsgy') format('woff'),
+    url('fonts/talentsoft-font-icons.svg?60qsgy#talentsoft-font-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #EFEFF0;
+    font-size: 14px;
+
+}
+
+.main-content {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.select-search {
+    margin: 5px;
+    max-width: 300px;
+}
+
+.block {
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid #E7E8E8;
+    background: white;
+    width: 100%;
+}
+
+.block .title {
+    font-size: 18px;
+    padding: 20px;
+    border-bottom: 2px solid #E7E8E8;
+    /* background: #174E99;
+        color:white; */
+}
+
+.block .content {
+    display: flex;
+}
+
+.block .bottom {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #F5F5F5;
+    border-top: 2px solid #E7E8E8;
+    border-radius: 0 0 10px 10px;
+}
+
+.left {
+    width: 30%;
+    min-width: 250px;
+    background-color: #fafafa;
+    padding: 25px;
+    border-right: 2px solid #E7E8E8;
+}
+
+.right {
+    width: 70%;
+    padding: 25px;
+
+}
+
+.small-title {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #A4A4A5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.blue {
+    color: #174E99;
+}
+
+.hr {
+    background: #E7E8E8;
+    height: 2px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.carac-spec {
+    display: flex;
+}
+
+.rect-blue {
+    height: 45px;
+    min-width: 45px;
+    background: #174E99;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.title-blue {
+    color: #174E99;
+    margin: 5px;
+}
+
+.title-blue .info-doc {
+    color: #A4A4A5;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.action {
+    min-width: 45px;
+    max-width: 45px;
+    height: 45px;
+    background: white;
+    border: 2px solid #E7E8E8;
+    border-radius: 10px;
+    margin: 10px 15px;
+    font-family: 'talentsoft-font-icons';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.action:hover {
+    border-color: #174E99;
+    color:#174E99;
+}
+
+.comment::before {
+    content: '\e968';
+}
+
+.task-list::before {
+    content: '\e956';
+}
+
+.history::before {
+    content: '\e994';
+}
+
+.add-block {
+    margin-bottom: -35px;
+    margin-top: -35px;
+    margin-right: -65px;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.add {
+    border-radius: 100%;
+}
+
+.add::before {
+    content: '\e92d';
+}
+.margin-bot{
+    margin-bottom:15px;
+}
+.maquette
+{
+    padding: 5px;
+    border: 2px solid #E7E8E8;
+}
+.link{
+    color:#174E99;
+    margin-bottom:5px;
+    display: flex;
+    align-items: center;
+}
+.link::before{
+    font-family: 'talentsoft-font-icons';
+    content: '\e92d';
+    color: white;
+    font-size: 10px;
+    border-radius: 100%;
+    background: #174E99;
+    padding: 2px 4px 3px 4px;
+    margin-right: 10px;
+}
+.epic-title
+{
+    background: #174E99;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color:white;
+}
+.horizontal-actions{
+    display: flex;
+    align-items: center;
+    margin-right: -50px;
+    width: 20px;
+}
+.circle
+{
+    border-radius: 100%;
+    margin: 3px;
+}
+.lock::before{
+    content:'\e961';
+}
+.copy::before{
+    content:'\e90b';
+}
+.trash::before{
+    content:'\e997';
+}
+.border-hori{
+    background:white;
+    border-radius: 23px;
+}
