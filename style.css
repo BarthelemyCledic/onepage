@@ -19,7 +19,7 @@ body {
 
 }
 
-.main-content {
+/* .main-content {
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -41,8 +41,7 @@ body {
     font-size: 18px;
     padding: 20px;
     border-bottom: 2px solid #E7E8E8;
-    /* background: #174E99;
-        color:white; */
+
 }
 
 .block .content {
@@ -221,4 +220,97 @@ body {
 .border-hori{
     background:white;
     border-radius: 23px;
+} */
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    background: black;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+.add-button{
+    border-radius: 100%;
+    background: blue;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 26px;
+    position: fixed;
+    top: 124px;
+    right: 13px;
+}
+.content{
+    padding-top: 150px;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover{
+    background: #c8c3f3;
+    cursor: pointer;
+}
+.td-module{
+    background: blue;
+    border-radius: 50px;
+    padding: 13px;
+    color: white;
+    margin: 15px;
+    width: fit-content;
+}
+.td-tittle{
+    font-size: 18px;
+    color:blue;
+}
+.td-tittle > span{
+    font-size: 15px;
+    color:gray;
+}
+.td-tracking
+{
+    display: flex;
+}
+.img-indi
+{
+    background:black;
+    color:white;
+    border-radius : 100%;
+}
+.date-modified
+{
+    color:grey;
+    font-style: italic;
+}
+.img-top
+{
+
+    background-image: url("img/Group2.png");
+    height: 268px;
+    width: 100%;
+}
+.search-smart
+{
+    width: 100%;
+    border-radius: 100px;
+    padding: 10px;
+    border: 0;
+}
+.content-search-smart
+{
+    width: 100%;
+    display: flex;
+}
+.content-search-smart:after{
+    content : "\e982";
+    font-size: 15px;
+    font-family: 'talentsoft-font-icons';
+    position: relative;
+    top: 9px;
+    right: 30px;
 }

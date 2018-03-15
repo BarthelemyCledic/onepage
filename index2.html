@@ -1,0 +1,282 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type='text/javascript' src='knockout-3.4.2.js'></script>
+    <link rel="stylesheet" href="normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="select-search">
+            <select class="form-control input-sm">
+                <option value="valeur1">Valeur 1</option>
+                <option value="valeur2" selected>Valeur 2</option>
+                <option value="valeur3">Valeur 3</option>
+            </select>
+        </div>
+        <!-- EPIC 1 -->
+        <div class="block">
+            <div class="title epic-title">
+                EPIC 1. Composant Post
+            </div>
+            <div class="content">
+                <div class="left">
+                    <div class="small-title bold">
+                        Pièces jointes
+                    </div>
+                    <div class="hr"></div>
+                    <div class="carac-spec">
+                        <div class="rect-blue"></div>
+                        <div class="title-blue">
+                            <div>Caractéristiques techniques</div>
+                            <div class="info-doc">Document XLS (68,4ko)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="small-title">
+                        <div>
+                            Crée le 27/01/2017 par Hélène Daviaud
+                        </div>
+                        <div>
+                            Mise à jour le 28/01/2017 par Hélène Daviaud
+                        </div>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="bold blue">
+                        Prérequis
+                    </div>
+                    <p>pas de pré-requis pour cette EPIC</p>
+                    <div class="bold blue">
+                        Principes fonctionnels
+                    </div>
+                    <p>
+                        Cette EPIC porte sur les composants de saisie ert lecture des posts et de leurs réponses qui constituent des files de discussion.
+                    </p>
+                    <p>
+                        Ils sont utilisés pour EPIC 2 et 3.
+                    </p>
+                    </p>
+                    Certaines fonctionnalités de ce composant peuvent être désactivées selon le contexte d'utilisation, cela est précisé dans
+                    les US correspondantes des EPIC 2 et 3.
+                    </p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="action task-list"></div>
+                <div class="action comment"></div>
+                <div class="action history"></div>
+            </div>
+        </div>
+        <div class="add-block">
+            <div class="action add"></div>
+        </div>
+        <!-- US 1.1 -->
+        <div class="block-with-action" style="display: flex">
+            <div class="block">
+                <div class="title">
+                    US 1.1. Saisie en mode réduit
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <div class="small-title bold">
+                            Epic
+                        </div>
+                        <select class="form-control input-sm margin-bot" readonly disabled>
+                            <option value="valeur1" selected>1.Composant Post</option>
+                            <option value="valeur2">Valeur 2</option>
+                            <option value="valeur3">Valeur 3</option>
+                        </select>
+                        <div class="small-title bold">
+                            User Story
+                        </div>
+                        <select class="form-control input-sm margin-bot" readonly disabled>
+                            <option value="valeur1" selected>1.1 Saisie mode réduit</option>
+                            <option value="valeur2" selected>Valeur 2</option>
+                            <option value="valeur3">Valeur 3</option>
+                        </select>
+                        <div class="small-title bold">
+                            Version
+                        </div>
+                        <select class="form-control input-sm margin-bot">
+                            <option value="valeur1" selected>7.0</option>
+                            <option value="valeur2">8.0</option>
+                            <option value="valeur3">9.0</option>
+                        </select>
+                        <div class="small-title bold">
+                            Etat
+                        </div>
+                        <select class="form-control input-sm margin-bot">
+                            <option value="valeur1" selected>Terminé</option>
+                            <option value="valeur2">en cours</option>
+                            <option value="valeur3">stand by</option>
+                        </select>
+                        <div class="hr"></div>
+                        <div class="small-title bold">
+                            Maquette
+                        </div>
+                        <div class="maquette margin-bot">
+                            <img src="download.jpeg"></img>
+                        </div>
+                        <div class="small-title bold">
+                            Liens et pièces jointes
+                        </div>
+                        <div class="link">
+                            <a>Ajouter un document</a>
+                        </div>
+                        <div class="link">
+                            <a>Ajouter un lien</a>
+                        </div>
+
+                    </div>
+                    <div class="right">
+                        <div class="small-title">
+                            <div>
+                                Crée le 27/01/2017 par Hélène Daviaud
+                            </div>
+                            <div>
+                                Mise à jour le 28/01/2017 par Hélène Daviaud
+                            </div>
+                        </div>
+                        <div class="hr"></div>
+                        <div class="bold margin-bot">
+                            Section
+                        </div>
+                        <input type="text" class="form-control margin-bot" placeholder="Sous-titre (facultatif)" readonly></input>
+                        <textarea class="form-control margin-bot" rows="5" readonly>Le composant de saisie d'un post peut être visible en mode "réduit"&#13;efzf&#13;trop cool
+                    </textarea>
+
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="action task-list"></div>
+                    <div class="action comment"></div>
+                    <div class="action history"></div>
+                </div>
+                <!-- <button type="submit" class="btn btn-default">Confirm identity</button>
+            <button type="button" class="btn btn-success">Success</button> -->
+            </div>
+            <div class="horizontal-actions">
+                <div class="border-hori">
+                    <div class="action lock circle"></div>
+                    <div class="action copy circle"></div>
+                    <div class="action trash circle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="add-block">
+            <div class="action add"></div>
+        </div>
+        <!-- US 1.2 -->
+        <div class="block">
+            <div class="title">
+                US 1.2 saisie en mode dévellopé
+            </div>
+            <div class="content">
+                <div class="left">
+                    <div class="small-title bold">
+                        Maquette
+                    </div>
+                    <div class="hr"></div>
+                    <div class="maquette margin-bot">
+                        <img src="download.jpeg"></img>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="small-title">
+                        <div>
+                            Crée le 27/01/2017 par Hélène Daviaud
+                        </div>
+                        <div>
+                            Mise à jour le 28/01/2017 par Hélène Daviaud
+                        </div>
+                    </div>
+                    <div class="hr"></div>
+                    <p>
+                        Saisie du message lui-même
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="action task-list"></div>
+                <div class="action comment"></div>
+                <div class="action history"></div>
+            </div>
+            <!-- <button type="submit" class="btn btn-default">Confirm identity</button>
+                <button type="button" class="btn btn-success">Success</button> -->
+        </div>
+        <div class="add-block">
+            <div class="action add"></div>
+        </div>
+        <!-- US 1.3 -->
+        <div class="block">
+            <div class="title">
+                US 1.3 Ajout de liens ou pièces jointes
+            </div>
+            <div class="content">
+                <div class="left">
+                    <div class="small-title bold">
+                        Maquette
+                    </div>
+                    <div class="hr"></div>
+                    <div class="maquette margin-bot">
+                        <img src="download.jpeg"></img>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="small-title">
+                        <div>
+                            Crée le 27/01/2017 par Hélène Daviaud
+                        </div>
+                        <div>
+                            Mise à jour le 28/01/2017 par Hélène Daviaud
+                        </div>
+                    </div>
+                    <div class="hr"></div>
+                    <p>
+                        Saisie du message lui-même
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="action task-list"></div>
+                <div class="action comment"></div>
+                <div class="action history"></div>
+            </div>
+            <!-- <button type="submit" class="btn btn-default">Confirm identity</button>
+                    <button type="button" class="btn btn-success">Success</button> -->
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
