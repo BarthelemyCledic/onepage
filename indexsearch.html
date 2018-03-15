@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type='text/javascript' src='knockout-3.4.2.js'></script>
+    <link rel="stylesheet" href="normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="header">
+        <!-- left part -->
+        <div>logo</div>
+        <!-- right part -->
+        <div class="content-search-smart">
+            <input class="search-smart" type="text" name="FirstName" value="comp">
+        </div>
+        <div>
+            image de droite
+        </div>
+    </div>
+    <div class="add-button">+</div>
+    <div class="content">
+        <div class="img-top">
+
+        </div>
+        <div class="grille">
+            <table style="width: 100%">
+                <tr>
+                    <td>
+                        <div class="td-module" style="background:#2ecc71">Compensation</div>
+                    </td>
+                    <td class="td-tittle">
+                        Sub-budgets consolidation
+                        <br/>
+                        <span>4 user stories</span>
+                    </td>
+                    <td>
+                        <div class="td-tracking">
+                            <div class="img-indi">
+                                <img src="img/ygritte (002).png">
+                            </div>
+                            <div>
+                                <div>Modified by Charlotte Bauder</div>
+                                <div class="date-modified">1 day ago</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="td-tracking">
+                            <div class="img-indi">
+                                <img src="img/84.png">
+                            </div>
+                            <div>
+                                <div>In progress</div>
+                                <div class="date-modified">Delivery 12/05/1986</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="td-module" style="background:#2ecc71">Compensation</div>
+                    </td>
+                    <td class="td-tittle">
+                        Mass approval
+                        <br/>
+                        <span>5 user stories</span>
+                    </td>
+                    <td>
+                        <div class="td-tracking">
+                            <div class="img-indi">
+                                <img src="img/tlannister.png">
+                            </div>
+                            <div>
+                                <div>Modified by Charlotte Bauder</div>
+                                <div class="date-modified">4 days ago</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="td-tracking">
+                            <div class="img-indi">
+                                <img src="img/100.png">
+                            </div>
+                            <div>
+                                <div>Ready to develop</div>
+                                <div class="date-modified">Delivery 12/05/1986</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</body>
+<script>
+    // A $( document ).ready() block.
+    $(document).ready(function () {
+        $('.search-smart').keydown(function (e) {
+            if (e.keyCode == 13) {
+                document.location.href = "nouvellepage.html"
+            }
+
+        });
+    });
+</script>
+
+</html>
